@@ -3,3 +3,39 @@ experimental = true
 
 [tools]
 swift = "latest"
+tombi = "latest"
+
+[hooks]
+postinstall = "mise run bootstrap"
+
+# Tasks
+
+[tasks.bootstrap]
+run = "swift package resolve"
+
+[tasks.run]
+alias = ["r", "swupdate"]
+description = "Run the CLI"
+run = "swift run swupdate"
+
+[tasks.test]
+alias = "t"
+description = "Run Swift tests"
+run = "swift test"
+
+[tasks.build]
+alias = "b"
+description = "Build a release binary"
+run = "swift build --configuration release"
+
+[tasks.upd]
+run = [
+  "mise upgrade",
+  "swift package update",
+]
+
+[tasks.upg]
+run = [
+  "mise upgrade --bump",
+  "swift package update",
+]
