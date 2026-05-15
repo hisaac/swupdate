@@ -1,0 +1,7 @@
+Software Update Tool
+
+Finding available software
+Software Update found the following full installers:
+* Title: macOS Sequoia, Version: 15.1, Size: 14123456789K
+* Title: macOS Sonoma, Version: 14.6.1, Size: 13248985973K
+* Title: macOS Ventura, Version: 13.7, Size: 12157035487K

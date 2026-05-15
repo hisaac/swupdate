@@ -1,0 +1,12 @@
+Software Update Tool
+
+Finding available software
+Software Update found the following new or updated software:
+* Label: MRTConfigData_10_15-1.93
+	 Title: MRTConfigData, Version: 1.93, Size: 4595KiB, Recommended: YES,
+* Label: XProtectPlistConfigData_10_15-2169
+	 Title: XProtectPlistConfigData, Version: 2169, Size: 975KiB, Recommended: YES,
+* Label: XProtectPayloads_10_15-109
+	 Title: XProtectPayloads, Version: 109, Size: 18241KiB, Recommended: YES,
+* Label: macOS Ventura 13.5.1-22G90
+	 Title: macOS Ventura 13.5.1, Version: 13.5.1, Size: 1520555KiB, Recommended: YES, Action: restart,

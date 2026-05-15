@@ -4,21 +4,24 @@ import PackageDescription
 
 let package = Package(
 	name: "swupdate",
+	platforms: [
+		.macOS(.v15)
+	],
 	dependencies: [
-		.package(url: "https://github.com/apple/swift-argument-parser.git", from: "1.7.1"),
-		.package(url: "https://github.com/swiftlang/swift-subprocess.git", from: "0.4.0"),
+		.package(url: "https://github.com/mxcl/Version.git", from: "2.2.1"),
+		.package(url: "https://github.com/pointfreeco/swift-parsing.git", from: "0.14.1"),
 	],
 	targets: [
-		.executableTarget(
-			name: "swupdate",
+		.target(
+			name: "SowftwareupdateParser",
 			dependencies: [
-				.product(name: "ArgumentParser", package: "swift-argument-parser"),
-				.product(name: "subprocess", package: "swift-subprocess"),
+				.product(name: "Parsing", package: "swift-parsing"),
+				.product(name: "Version", package: "Version"),
 			]
 		),
 		.testTarget(
-			name: "swupdateTests",
-			dependencies: ["swupdate"]
+			name: "SowftwareupdateParserTests",
+			dependencies: ["SowftwareupdateParser"]
 		),
 	],
 	swiftLanguageModes: [.v6]

@@ -1,5 +1,5 @@
 import Testing
-@testable import swupdate
+@testable import SowftwareupdateParser
 
 @Test func example() async throws {
 

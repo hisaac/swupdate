@@ -1,0 +1,6 @@
+Software Update Tool
+
+Finding available software
+Software Update found the following new or updated software:
+* Label: macOS Ventura 13.5-22G74
+	 Title: macOS Ventura 13.5, Version: 13.5, Size: 3502490K, Recommended: YES, Action: restart,
