@@ -21,7 +21,13 @@ let package = Package(
 		),
 		.testTarget(
 			name: "SowftwareupdateParserTests",
-			dependencies: ["SowftwareupdateParser"]
+			dependencies: [
+				"SowftwareupdateParser",
+				.product(name: "Version", package: "Version"),
+			],
+			resources: [
+				.process("Resources"),
+			]
 		),
 	],
 	swiftLanguageModes: [.v6]
